@@ -1,10 +1,10 @@
 // Initialize points from localStorage or set to 0 if not present
 const points = {
-    gryffindor: localStorage.getItem('gryffindor') ? parseInt(localStorage.getItem('gryffindor')) : 0,
-    slytherin: localStorage.getItem('slytherin') ? parseInt(localStorage.getItem('slytherin')) : 0,
-    ravenclaw: localStorage.getItem('ravenclaw') ? parseInt(localStorage.getItem('ravenclaw')) : 0,
-    hufflepuff: localStorage.getItem('hufflepuff') ? parseInt(localStorage.getItem('hufflepuff')) : 0,
-    hogwarts: localStorage.getItem('hogwarts') ? parseInt(localStorage.getItem('hogwarts')) : 0
+    gryffindor: localStorage.getItem('gryffindor2') ? parseInt(localStorage.getItem('gryffindor2')) : 0,
+    slytherin: localStorage.getItem('slytherin2') ? parseInt(localStorage.getItem('slytherin2')) : 0,
+    ravenclaw: localStorage.getItem('ravenclaw2') ? parseInt(localStorage.getItem('ravenclaw2')) : 0,
+    hufflepuff: localStorage.getItem('hufflepuff2') ? parseInt(localStorage.getItem('hufflepuff2')) : 0,
+    hogwarts: localStorage.getItem('hogwarts2') ? parseInt(localStorage.getItem('hogwarts2')) : 0
 };
 
 // Array to cycle through for increment options
