@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts House Points</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>7A Hogwarts House Points</h1>
+    </header>
+
+    <div class="houses">
+        <!-- Gryffindor -->
+        <div class="house gryffindor" id="gryffindor">
+            <img src="gryffindor-crest.png" alt="Gryffindor Crest" class="house-crest">
+            <h2>Gryffindor</h2>
+            <div class="points">
+                <button onclick="adjustPoints('gryffindor', -currentIncrement)">-</button>
+                <span id="gryffindor-points">0</span>
+                <button onclick="adjustPoints('gryffindor', currentIncrement)">+</button>
+            </div>
+        </div>
+
+        <!-- Slytherin -->
+        <div class="house slytherin" id="slytherin">
+            <img src="slytherin-crest.png" alt="Slytherin Crest" class="house-crest">
+            <h2>Slytherin</h2>
+            <div class="points">
+                <button onclick="adjustPoints('slytherin', -currentIncrement)">-</button>
+                <span id="slytherin-points">0</span>
+                <button onclick="adjustPoints('slytherin', currentIncrement)">+</button>
+            </div>
+        </div>
+
+        <!-- Ravenclaw -->
+        <div class="house ravenclaw" id="ravenclaw">
+            <img src="ravenclaw-crest.png" alt="Ravenclaw Crest" class="house-crest">
+            <h2>Ravenclaw</h2>
+            <div class="points">
+                <button onclick="adjustPoints('ravenclaw', -currentIncrement)">-</button>
+                <span id="ravenclaw-points">0</span>
+                <button onclick="adjustPoints('ravenclaw', currentIncrement)">+</button>
+            </div>
+        </div>
+
+        <!-- Hufflepuff -->
+        <div class="house hufflepuff" id="hufflepuff">
+            <img src="hufflepuff-crest.png" alt="Hufflepuff Crest" class="house-crest">
+            <h2>Hufflepuff</h2>
+            <div class="points">
+                <button onclick="adjustPoints('hufflepuff', -currentIncrement)">-</button>
+                <span id="hufflepuff-points">0</span>
+                <button onclick="adjustPoints('hufflepuff', currentIncrement)">+</button>
+            </div>
+        </div>
+
+        <!-- Hogwarts -->
+        <div class="house hogwarts" id="hogwarts">
+            <img src="hogwarts-crest.png" alt="Hogwarts Crest" class="house-crest-hogwart">
+            <h2>Hogwarts</h2>
+            <div class="points">
+                <button onclick="adjustPoints('hogwarts', -currentIncrement)">-</button>
+                <span id="hogwarts-points">0</span>
+                <button onclick="adjustPoints('hogwarts', currentIncrement)">+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to change increment value -->
+    <div class="increment-section">
+        <button onclick="changeIncrement()">Change Increment (Current: <span id="current-increment">1</span>)</button>
+    </div>
+    
+    <!-- Small leaderboard at the bottom -->
+    <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="house-leaderboard">
+            <!-- Leaderboard entries will be dynamically updated here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

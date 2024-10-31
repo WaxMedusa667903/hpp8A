@@ -1,0 +1,167 @@
+/* General styles */
+.mate-sc-regular {
+  font-family: "Mate SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Mate SC', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4b2f50;
+    color: white;
+    padding: 20px;
+}
+
+.houses {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.house {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.house:hover {
+    transform: scale(1.05);
+}
+
+.house h2 {
+    color: #4b2f50;
+    margin-bottom: 10px;
+}
+
+.house-crest {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.house-crest-hogwart {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.points {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4b2f50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6b2f70;
+}
+
+span {
+    font-size: 1.5em;
+}
+
+/* Increment button section */
+.increment-section {
+    margin: 20px auto;
+}
+
+/* Leaderboard section */
+#leaderboard {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#leaderboard h3 {
+    font-size: 20px;
+    color: #4b2f50;
+}
+
+#house-leaderboard {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+#house-leaderboard li {
+    margin: 5px 0;
+}
+
+/* Custom styles for each house */
+.gryffindor {
+    background-color: #ae0001; /* Gryffindor red */
+}
+
+.gryffindor h2, .gryffindor button {
+    color: #d3a625; /* Gryffindor gold */
+}
+
+.increment-section button {
+  font-family: 'Mate SC', serif; /* Apply the Mate SC font */
+  font-size: 18px; /* Adjust the font size if needed */
+  padding: 10px 20px;
+  background-color: #5a365d; /* Button color to match the overall design */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.increment-section button:hover {
+  background-color: #6d4072; /* Slightly lighter color on hover */
+}
+
+
+.slytherin {
+    background-color: #1a472a; /* Slytherin green */
+}
+
+.slytherin h2, .slytherin button {
+    color: #aaaaaa; /* Slytherin silver */
+}
+
+.ravenclaw {
+    background-color: #0e1a40; /* Ravenclaw blue */
+}
+
+.ravenclaw h2, .ravenclaw button {
+    color: #946b2d; /* Ravenclaw bronze */
+}
+
+.hufflepuff {
+    background-color: #a89200; /* Hufflepuff yellow */
+}
+
+.hufflepuff h2, .hufflepuff button {
+    color: #000000; /* Hufflepuff black */
+}
+
+.hogwarts {
+    background-color: #636363; /* Hogwarts black */
+}
+
+.hogwarts h2, .hogwarts button {
+    color: #ffffff; /* White text for Hogwarts */
+}
+
